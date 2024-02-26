@@ -1,8 +1,42 @@
 
 \section{Introducción}
-\subsection{Antecedentes}
-El tiempo de problema que vamos a resolver; antecedentes; dificultad técnica, etc.
-\cite{overleafwebsite}
-\subsection{Enunciado}
-Problema a resolver
-Enunciado con gráficos, tablas y cualquier otro recurso que ayude a comprenderlo.
+El reconocimiento y clasificación de sonidos en entornos sociales y de cuidado han
+emergido como áreas de investigación fundamentales con aplicaciones prácticas
+significativas. En este contexto, el presente proyecto se centra en la identificación
+precisa de sonidos específicos como tos, risas, lloros y suspiros. Estos sonidos,
+expresiones auditivas fundamentales en la comunicación humana, ofrecen un
+riquísimo campo de estudio con posibilidades de aplicación que van desde la salud
+hasta el bienestar emocional y la automatización del hogar.
+\subsection{Motivación}
+La motivación en este proyecto es impulsada por la necesidad de mejorar la calidad
+de vida y el cuidado de las personas a través de la tecnología. La identificación
+precisa de sonidos asociados con expresiones emocionales y estados de salud
+específicos proporciona una herramienta valiosa en entornos médicos, hogares de
+ancianos, y situaciones sociales diversas. Este proyecto aspira a crear un sistema
+robusto que no solo ofrezca un análisis acertado de los sonidos, sino que también
+pueda adaptarse a contextos cambiantes, mejorando así la eficiencia y la efectividad
+en la toma de decisiones. 
+% \\ Este proyecto tiene el potencial de transformar la forma en que abordamos la
+% atención médica, proporcionamos apoyo emocional, y diseñamos entornos
+% interactivos. La motivación del proyecto radica en la oportunidad de contribuir
+% significativamente al bienestar de las personas, ofreciendo soluciones innovadoras
+% que abordan las complejidades de la comunicación humana y la atención
+% personalizada.
+\subsection{Objetivos}
+\subsubsection{Objetivo general}
+Identificar y extraer diferentes tipos de sonidos a partir de fragmentos de audio para su posterior análisis e implementación en diferentes modelos sociales. Para ello aplicaremos la Transformada de Fourier para limpiar el sonido de nuestros fragmentos de audio. Posteriormente implementaremos un modelo de clasificación, el cual entrenaremos y haremos predicciones con nuevos datos.
+\subsubsection{Objetivos específicos}
+\begin{enumerate}
+    \item \textbf{Explorar y adquirir datos de audio:} Recopilar una amplia variedad de muestras de audio que representen diferentes tipos de sonidos relevantes para el análisis y modelado social.
+    \item \textbf{Preprocesamiento de datos de audio:} Utilizar herramientas de procesamiento de señales para preprocesar los datos de audio, realizando la normalización del volumen y la eliminación de ruido de fondo no deseados. Este último lo realizaremos mediante la aplicación de la transformada de fourier para representar la señal en el dominio de la frecuencia, analizar este espectro de frecuencia para identificar las componentes de sonido deseadas y el ruido no deseado y por último realizar una eliminación selectiva de frecuencias no relevantes para mejorar la calidad de la señal y reducir el impacto del ruido.
+    \item \textbf{Implementar la Transformada de Fourier:} Utilizaremos la biblioteca \textit{numpy} de Python, que permitirá transformar los datos de audio del dominio temporal al dominio de la frecuencia.
+    \item \textbf{Análisis de frecuencia de sonido:} Analizar los espectros de frecuencia resultantes para identificar las características espectrales distintivas de diferentes tipos de sonidos, como tonos, frecuencias dominantes y distribuciones de energía en diferentes bandas de frecuencia.
+    \item \textbf{Extracción de características relevantes:}Identificar y extraer características relevantes de los espectros de frecuencia que puedan ser útiles para la clasificación y análisis de diferentes tipos de sonidos, como la amplitud máxima, la frecuencia dominante o  la dispersión espectral.
+    \item \textbf{Desarrollo de modelos de clasificación:}Utilizaremos técnicas de aprendizaje automático, como redes neuronales, para desarrollar un modelo que pueda clasificar automáticamente los diferentes tipos de sonidos basados en las características extraídas.
+    \item \textbf{Validación y evaluación del modelo:}Evaluaremos el rendimiento de los modelos de clasificación con nuevos datos para evaluar el rendimiento de nuestro modelo.  Utilizando métricas como la precisión.
+    \item \textbf{Implementación y despliegue del modelo:}Integraremos el modelo de clasificación final en una aplicación para su implementación práctica (de manera únicamente teórica), lo que llegará a poder realizar una detección y clasificación a tiempo real en entornos sociales específicos.
+\end{enumerate}
+\subsection{Alcance e impacto}
+\section{Estado de la cuestión}
+\subsection{Investigaciones existentes}
+\subsection{Tabla resumen}
