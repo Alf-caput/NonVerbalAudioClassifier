@@ -117,3 +117,31 @@
 %     \textbf{Por qué es útil:\\}
 % \end{flushleft}
 \subsection{Tabla resumen}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}m{#1}}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|P{2.9cm}|P{3cm}|P{3cm}|P{2.8cm}|}
+        \hline
+        \textbf{Artículo}
+        & \textbf{Título}
+        & \textbf{Análisis}
+        & \textbf{Objetivo del estudio}
+        & \textbf{Relación y aportación}
+        \\
+        \hline
+        3
+        & Clasificación automática de sonidos utilizando lenguaje máquina
+        & Crear un sistema de clasificación de sonidos ambientales.Una vez implantado el modelo estudiar los parámetros de decisión.
+        & Explorar métodos de extracción de características de audio.Conseguir una precisión aceptable. Elegir el mejor modelo de inteligencia artificial.
+        & Clasificador de sonidos y Transformada de Fourier
+        \\
+        \hline
+        4
+        & Reconocimiento automático de instrumentos mediante aprendizaje máquina
+        & Desarrollar métodos para el reconocimiento de instrumentos musicales utilizando algoritmos de aprendizaje automático
+        & Identificar qué algoritmo es más óptimo para la clasificación. Se exploran aspectos como la reducción de dimensiones y las dificultades asociadas a cada instrumento
+        & Contraste de algoritmos de clasificación y analogía de los instrumentos musicales con sonidos producidos por las personas.
+        \\
+        \hline
+    \end{tabular}
+\end{table}
