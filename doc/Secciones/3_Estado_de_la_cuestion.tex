@@ -125,9 +125,10 @@ A pesar de los avances logrados, persisten desafíos significativos, particularm
     \textbf{Resumen:\\}
     El objetivo principal es desarrollar un método matemático que permita clasificar las voces según si padecen algún tipo de afección o no, utilizando para ello series de Fourier y redes neuronales convolucionales (CNN).
     El trabajo se divide en dos grandes bloques: la clasificación mediante series de Fourier y la clasificación utilizando redes neuronales. En el primer bloque, se escogen voces sanas y voces con nódulos para comparar su frecuencia fundamental media y la amplitud de sus oscilogramas. Se plantean hipótesis sobre las diferencias entre voces sanas y con patología, proponiendo ajustar distribuciones gaussianas a las características de las señales de voz para confirmar o deshechar estas hipótesis.
-    En el segundo bloque, se propone el uso de redes neuronales, específicamente la red neuronal convolucional (CNN), para la clasificación de las voces. Se identifica un problema de desbalance en el conjunto de datos, ya que hay muchas más muestras de voces sanas que de voces con patología. A pesar de que la exactitud del modelo es alta, la precisión y el recall son muy bajos para las muestras patológicas, lo que indica que el modelo tiende a clasificar todas las señales de voz como sanas. Para intentar solucionar este problema, se propone un entrenamiento de bajo y sobremuestreo de las entradas de la red.
+    \\En el segundo bloque, se propone el uso de redes neuronales, específicamente la red neuronal convolucional (CNN), para la clasificación de las voces. Se identifica un problema de desbalance en el conjunto de datos, ya que hay muchas más muestras de voces sanas que de voces con patología. A pesar de que la exactitud del modelo es alta, la precisión y el recall son muy bajos para las muestras patológicas, lo que indica que el modelo tiende a clasificar todas las señales de voz como sanas. Para intentar solucionar este problema, se propone un entrenamiento de bajo y sobremuestreo de las entradas de la red.
     \\
     \textbf{Por qué es útil:\\}
+    El manejo de redes neuronales en sintonía con la transformada de Fourier es el foco principal del proyecto. Estas herramientas permitirán una correcta limpieza y extracción de características del dataset de sonidos no verbales.
 \newpage
 \subsection{Tabla resumen}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}m{#1}}
@@ -140,6 +141,20 @@ A pesar de los avances logrados, persisten desafíos significativos, particularm
         & \textbf{Análisis}
         & \textbf{Objetivo del estudio}
         & \textbf{Relación y aportación}
+        \\
+        \hline
+        1
+        & Desarrollo y análisis de clasificadores de señales de audio
+        & Crear un sistema de clasificación de sonidos ambientales.Una vez implantado el modelo estudiar los parámetros de decisión.
+        & Explorar métodos de extracción de características de audio.Conseguir una precisión aceptable. Elegir el mejor modelo de inteligencia artificial.
+        & Clasificador de sonidos y Transformada de Fourier
+        \\
+        \hline
+        2
+        & Environmental sound recognition: a survey
+        & Desarrollar métodos para el reconocimiento de instrumentos musicales utilizando algoritmos de aprendizaje automático
+        & Identificar qué algoritmo es más óptimo para la clasificación. Se exploran aspectos como la reducción de dimensiones y las dificultades asociadas a cada instrumento
+        & Contraste de algoritmos de clasificación y analogía de los instrumentos musicales con sonidos producidos por las personas.
         \\
         \hline
         3
