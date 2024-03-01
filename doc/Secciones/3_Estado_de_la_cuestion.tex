@@ -128,11 +128,12 @@ A pesar de los avances logrados, persisten desafíos significativos, particularm
     En el segundo bloque, se propone el uso de redes neuronales, específicamente la red neuronal convolucional (CNN), para la clasificación de las voces. Se identifica un problema de desbalance en el conjunto de datos, ya que hay muchas más muestras de voces sanas que de voces con patología. A pesar de que la exactitud del modelo es alta, la precisión y el recall son muy bajos para las muestras patológicas, lo que indica que el modelo tiende a clasificar todas las señales de voz como sanas. Para intentar solucionar este problema, se propone un entrenamiento de bajo y sobremuestreo de las entradas de la red.
     \\
     \textbf{Por qué es útil:\\}
+\newpage
 \subsection{Tabla resumen}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}m{#1}}
-\begin{table}[h]
-    \centering
-    \begin{tabular}{|c|P{2.9cm}|P{3cm}|P{3cm}|P{2.8cm}|}
+% \begin{table}[h]
+%     \centering
+    \begin{longtable}{|c|m{2.9cm}|m{3cm}|m{3cm}|m{2.8cm}|}
         \hline
         \textbf{Artículo}
         & \textbf{Título}
@@ -181,5 +182,7 @@ A pesar de los avances logrados, persisten desafíos significativos, particularm
         & Se centra en el desarrollo y evaluación de un método matemático para clasificar voces según la presencia de alguna afección.
         & El estudio busca identificar diferencias significativas en las características de las señales de voz entre voces sanas y voces con patología, con el fin de proporcionar una herramienta precisa y eficaz para el diagnóstico temprano de trastornos vocales.
         & Series de Fourier y Redes Neuronales Convolucionales (CNN).
-    \end{tabular}
-\end{table}
+        \\
+        \hline
+    \end{longtable}
+% \end{table}
