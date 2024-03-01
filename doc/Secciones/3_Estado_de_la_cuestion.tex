@@ -1,4 +1,20 @@
 \section{Estado de la cuestión}
+El análisis y procesamiento de señales de audio han experimentado avances significativos gracias a la aplicación de técnicas matemáticas y computacionales. En este contexto, la Transformada de Fourier y las Redes Neuronales emergen como herramientas esenciales, impulsando innovaciones en el reconocimiento de patrones de audio, el procesamiento de señales y la mejora de sistemas de diagnóstico.
+\subsubsection*{Transformada de Fourier}
+La Transformada de Fourier juega un papel crucial en el desglose de señales de audio en sus componentes frecuenciales, facilitando el análisis y la clasificación detallada de las señales. Aguirre Martín (2017), en su trabajo sobre el desarrollo y análisis de clasificadores de señales de audio, destaca la importancia de esta herramienta para el procesamiento efectivo de señales de audio, especialmente en la identificación de características únicas dentro de señales complejas.
+\subsubsection*{Redes Neuronales}
+Por otro lado, las Redes Neuronales, particularmente las Convolucionales (CNNs), han demostrado ser excepcionalmente eficaces en el reconocimiento y clasificación de señales de audio. Su capacidad para aprender de grandes cantidades de datos y extraer características significativas sin la necesidad de preprocesamiento detallado ha revolucionado el campo. Chachada y Kuo (2014) proporcionan una revisión exhaustiva sobre el reconocimiento de sonidos ambientales, resaltando cómo las técnicas basadas en aprendizaje automático han avanzado en la clasificación y el análisis de sonidos no musicales y no verbales.
+\subsubsection*{Integración de ambas técnicas}
+La integración de la Transformada de Fourier con Redes Neuronales ha permitido el desarrollo de sistemas de reconocimiento de audio altamente efectivos y eficientes.
+Esto es debido a la capacidad de aplicar la Transformada de Fourier en entornos ruidosos y complejos para disminuir las interferencias y ampliar la frecuencia de interés. De esta forma, se pueden optimizar todos los datos independientemente del entorno y así aprovechar al máximo la capacidad de las redes neuronales para desarrollar diferentes modelos.
+Este enfoque combinado se ha aplicado en una variedad de aplicaciones, desde el diagnóstico médico hasta la seguridad y la interacción hombre-máquina.
+\subsubsection*{Aplicaciones destacadas}
+\subsubsection*{diagnóstico médico}
+La capacidad para clasificar y analizar señales de voz y sonidos cardíacos con precisión tiene implicaciones significativas en el campo médico, permitiendo el desarrollo de herramientas de diagnóstico no invasivas y altamente efectivas.
+\subsubsection*{Seguridad y monitoreo ambiental}
+El reconocimiento preciso de sonidos ambientales puede ser utilizado para mejorar sistemas de seguridad y monitoreo, ofreciendo métodos rápidos y confiables para la detección de eventos inusuales o peligrosos.
+\subsubsection*{Desafios y futuro}
+A pesar de los avances logrados, persisten desafíos significativos, particularmente en la mejora de la precisión del reconocimiento en entornos ruidosos y la gestión eficiente de grandes volúmenes de datos. La investigación futura se beneficiará de un enfoque multidisciplinario, combinando conocimientos de acústica, matemáticas, y ciencias de la computación, para desarrollar soluciones innovadoras que aborden estos desafíos.
 \subsection{Investigaciones existentes}
 \subsubsection*{Artículo 1}
 \begin{flushleft}
@@ -97,31 +113,37 @@
     El enfoque que se da al análisis de sonidos es muy práctico y aunque tal vez muy específico, permite hacerse a la idea de como puede ser una aplicación práctica de un clasificador de sonidos, además de mejorar la precisión con la técnica Bag-of-audio-words.
 \end{flushleft}
 \subsubsection*{Artículo 7}
-% \begin{flushleft}
-%     \textbf{Título:}
-%     \\
-%     \textbf{ID: \cite{}}
-%     \\
-%     \textbf{URL:}
-%     \url{}
-%     \\
-%     \textbf{Resumen:\\}
-%     \\
-%     \textbf{Por qué es útil:\\}
-% \end{flushleft}
+ \begin{flushleft}
+     \textbf{Título:}
+     "Eliminacion de ruido en sonidos cardíacos mediante tecnicas de aprendizaje profundo"
+     \\
+     \textbf{ID: \cite{rodriguezeliminacion}}
+     \\
+     \textbf{URL:}
+     \url{https://rcs.cic.ipn.mx/2023_152_9/Eliminacion%20de%20ruido%20en%20sonidos%20cardiacos%20mediante%20tecnicas%20de%20aprendizaje%20profundo.pdf}
+     \\
+     \textbf{Resumen:\\}
+     El artículo aborda la problemática del ruido en grabaciones de sonidos cardiacos y propone una solución mediante el uso de técnicas avanzadas de aprendizaje profundo. Se enfoca en mejorar la calidad de estas grabaciones para facilitar diagnósticos más precisos y eficaces en el ámbito médico. La investigación destaca por su enfoque innovador en el procesamiento de señales y su potencial para contribuir significativamente a la cardiología y la medicina diagnóstica.
+     \\
+     \textbf{Por qué es útil:\\}
+ \end{flushleft}
 \subsubsection*{Artículo 8}
-% \begin{flushleft}
-%     \textbf{Título:}
-%     \\
-%     \textbf{ID: \cite{}}
-%     \\
-%     \textbf{URL:}
-%     \url{}
-%     \\
-%     \textbf{Resumen:\\}
-%     \\
-%     \textbf{Por qué es útil:\\}
-% \end{flushleft}
+\begin{flushleft}
+    \textbf{Título:}
+    "Clasificación de voces a través de séries de Fourier y redes neuronales"
+    \\
+    \textbf{ID: \cite{gomez2023clasificacion}}
+    \\
+    \textbf{URL:}
+    \url{file:///C:/Users/j0n4s/Downloads/2023-24-ETSII-A-2178-2178050-m.gomezma.2017-MEMORIA.pdf}
+    \\
+    \textbf{Resumen:\\}
+    El objetivo principal es desarrollar un método matemático que permita clasificar las voces según si padecen algún tipo de afección o no, utilizando para ello series de Fourier y redes neuronales convolucionales (CNN).
+    El trabajo se divide en dos grandes bloques: la clasificación mediante series de Fourier y la clasificación utilizando redes neuronales. En el primer bloque, se escogen voces sanas y voces con nódulos para comparar su frecuencia fundamental media y la amplitud de sus oscilogramas. Se plantean hipótesis sobre las diferencias entre voces sanas y con patología, proponiendo ajustar distribuciones gaussianas a las características de las señales de voz para confirmar o deshechar estas hipótesis.
+    En el segundo bloque, se propone el uso de redes neuronales, específicamente la red neuronal convolucional (CNN), para la clasificación de las voces. Se identifica un problema de desbalance en el conjunto de datos, ya que hay muchas más muestras de voces sanas que de voces con patología. A pesar de que la exactitud del modelo es alta, la precisión y el recall son muy bajos para las muestras patológicas, lo que indica que el modelo tiende a clasificar todas las señales de voz como sanas. Para intentar solucionar este problema, se propone un entrenamiento de bajo y sobremuestreo de las entradas de la red.
+    \\
+    \textbf{Por qué es útil:\\}
+\end{flushleft}
 \subsection{Tabla resumen}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}m{#1}}
 \begin{table}[h]
@@ -163,5 +185,17 @@
         & Entender un caso práctico de uso y el enfoque mediante la técnica Bag-of-Audio-Words.
         \\
         \hline
+        7
+        & Eliminacion de ruido en sonidos cardíacos mediante tecnicas de aprendizaje profundo
+        & Estudia la efectividad de las técnicas de aprendizaje profundo para eliminar el ruido de las grabaciones de sonidos cardíacos.
+        & El estudio busca mejorar la calidad de los registros de sonidos cardíacos, lo que permitiría un diagnóstico más preciso y confiable de las condiciones cardíacas.
+        & Clasificador de sonidos, técnicas avanzadas de aprendizaje profundo y Transformada de Fourier
+        \\
+        \hline
+        8
+        & Clasificación de voces a través de séries de Fourier y redes neuronales
+        & Se centra en el desarrollo y evaluación de un método matemático para clasificar voces según la presencia de alguna afección.
+        & El estudio busca identificar diferencias significativas en las características de las señales de voz entre voces sanas y voces con patología, con el fin de proporcionar una herramienta precisa y eficaz para el diagnóstico temprano de trastornos vocales.
+        & Series de Fourier y Redes Neuronales Convolucionales (CNN).
     \end{tabular}
 \end{table}
