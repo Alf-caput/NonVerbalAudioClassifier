@@ -32,6 +32,11 @@ Motivación llevar a justificación la primera parte
 - Introducción
 - Impersonal
 
+**Tabla**
+- Agregar una etiqueta (título)
+- Cursiva títulos
+- Título tabla más pequeño que el de letra regular
+
 
 
 
