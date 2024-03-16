@@ -33,6 +33,7 @@ Motivación llevar a justificación la primera parte
 - Impersonal
 
 **Tabla**
+- Quitar los índices de artículos
 - Agregar una etiqueta (título)
 - Cursiva títulos
 - Título tabla más pequeño que el de letra regular
