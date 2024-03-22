@@ -1,5 +1,10 @@
 # LaTeX
 doc/build/
+
+# Dataset
+vs_release_16k.zip
+data/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
