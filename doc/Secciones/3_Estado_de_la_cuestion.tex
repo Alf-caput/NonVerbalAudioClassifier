@@ -1,7 +1,22 @@
 \section{Estado de la cuestión}
+El análisis y procesamiento de señales de audio han experimentado avances significativos gracias a la aplicación de técnicas matemáticas y computacionales. En este contexto, la Transformada de Fourier y las Redes Neuronales emergen como herramientas esenciales, impulsando innovaciones en el reconocimiento de patrones de audio, el procesamiento de señales y la mejora de sistemas de diagnóstico.
+\subsubsection*{Transformada de Fourier}
+La Transformada de Fourier juega un papel crucial en el desglose de señales de audio en sus componentes frecuenciales, facilitando el análisis y la clasificación detallada de las señales. Aguirre Martín (2017), en su trabajo sobre el desarrollo y análisis de clasificadores de señales de audio, destaca la importancia de esta herramienta para el procesamiento efectivo de señales de audio, especialmente en la identificación de características únicas dentro de señales complejas.
+\subsubsection*{Redes Neuronales}
+Por otro lado, las Redes Neuronales, particularmente las Convolucionales (CNNs), han demostrado ser excepcionalmente eficaces en el reconocimiento y clasificación de señales de audio. Su capacidad para aprender de grandes cantidades de datos y extraer características significativas sin la necesidad de preprocesamiento detallado ha revolucionado el campo. Chachada y Kuo (2014) proporcionan una revisión exhaustiva sobre el reconocimiento de sonidos ambientales, resaltando cómo las técnicas basadas en aprendizaje automático han avanzado en la clasificación y el análisis de sonidos no musicales y no verbales.
+\subsubsection*{Integración de ambas técnicas}
+La integración de la Transformada de Fourier con Redes Neuronales ha permitido el desarrollo de sistemas de reconocimiento de audio altamente efectivos y eficientes.
+Esto es debido a la capacidad de aplicar la Transformada de Fourier en entornos ruidosos y complejos para disminuir las interferencias y ampliar la frecuencia de interés. De esta forma, se pueden optimizar todos los datos independientemente del entorno y así aprovechar al máximo la capacidad de las redes neuronales para desarrollar diferentes modelos.
+Este enfoque combinado se ha aplicado en una variedad de aplicaciones, desde el diagnóstico médico hasta la seguridad y la interacción hombre-máquina.
+\subsubsection*{Aplicaciones destacadas}
+\subsubsection*{diagnóstico médico}
+La capacidad para clasificar y analizar señales de voz y sonidos cardíacos con precisión tiene implicaciones significativas en el campo médico, permitiendo el desarrollo de herramientas de diagnóstico no invasivas y altamente efectivas.
+\subsubsection*{Seguridad y monitoreo ambiental}
+El reconocimiento preciso de sonidos ambientales puede ser utilizado para mejorar sistemas de seguridad y monitoreo, ofreciendo métodos rápidos y confiables para la detección de eventos inusuales o peligrosos.
+\subsubsection*{Desafios y futuro}
+A pesar de los avances logrados, persisten desafíos significativos, particularmente en la mejora de la precisión del reconocimiento en entornos ruidosos y la gestión eficiente de grandes volúmenes de datos. La investigación futura se beneficiará de un enfoque multidisciplinario, combinando conocimientos de acústica, matemáticas, y ciencias de la computación, para desarrollar soluciones innovadoras que aborden estos desafíos.
 \subsection{Investigaciones existentes}
 \subsubsection*{Artículo 1}
-\begin{flushleft}
     \textbf{Título:}
     “Desarrollo y análisis de clasificadores de señales de audio”
     \\
@@ -15,9 +30,7 @@
     \\
     \textbf{Por qué es útil:\\}
     Esta información puede ser muy útil para orientar nuestro proyecto en el desarrollo de un modelo que diferencie audios de tos, estornudos y risas. También es importante para nuestro proyecto la extracción de características del audio y el uso de algoritmos de aprendizaje automático para la clasificación. Además, se menciona un enfoque supervisado, que es importante cuando tienes datos etiquetados en clases. Por último, el artículo menciona el desarrollo de un software para la clasificación de audio en tiempo real, lo cual puede ser útil para implementar el modelo en un entorno práctico.
-\end{flushleft}
 \subsubsection*{Artículo 2}
-\begin{flushleft}
     \textbf{Título:}
     “Environmental sound recognition: a survey”
     \\
@@ -31,9 +44,7 @@
     \\
     \textbf{Por qué es útil:\\}
     Este artículo es útil porque proporciona revisión detallada de los avances de campo del reconocimiento de sonidos ambientales. Al revisar las técnicas presentadas en el artículo, podrás identificar técnicas relevantes que podrían ser aplicables a tu proyecto de diferenciar entre audios de tos y risa. Por ejemplo, podrías encontrar métodos para manejar aspectos no estacionarios de los sonidos, lo cual puede ser relevante para identificar características distintivas de la tos y la risa en los audios.
-\end{flushleft}
 \subsubsection*{Artículo 3}
-\begin{flushleft}
     \textbf{Título:}
     “Clasificación automática de sonidos utilizando lenguaje máquina”
     \\
@@ -47,9 +58,7 @@
     \\
     \textbf{Por qué es útil:\\}
     Este trabajo es útil ya que aborda un tema muy conectado al nuestro, nuestro objetivo es la clasificación de sonidos producidos por las personas. Aunque este artículo clasifique sonidos ambientales nos puede ayudar a relacionar el enfoque que podemos darle a nuestro trabajo.Además utiliza la transformada de fourier, luego también es útil para empezar a conocerla para poder trabajar con ella.
-\end{flushleft}
 \subsubsection*{Artículo 4}
-\begin{flushleft}
     \textbf{Título:}
     “Reconocimiento automático de instrumentos mediante aprendizaje máquina”
     \\
@@ -63,70 +72,89 @@
     \\
     \textbf{Por qué es útil:\\}
     La utilidad de la información del estudio de instrumentos se refleja en la experiencia adquirida en el procesamiento de datos de audio y en la selección de algoritmos eficaces para la clasificación, realizando un contraste de estos para elegir el mejor candidato. Además, conceptos como la reducción de dimensiones y la adaptabilidad a contextos cambiantes pueden aplicarse al reconocimiento de sonidos en nuestro proyecto.
-\end{flushleft}
 \subsubsection*{Artículo 5}
-% \begin{flushleft}
-%     \textbf{Título:}
-%     \\
-%     \textbf{ID: \cite{}}
-%     \\
-%     \textbf{URL:}
-%     \url{}
-%     \\
-%     \textbf{Resumen:\\}
-%     \\
-%     \textbf{Por qué es útil:\\}
-% \end{flushleft}
+    \textbf{Título:}
+    “Classification of Nonverbal Human Produced Audio Events: A Pilot Study”
+    \\
+    \textbf{ID: \cite{bouserhal2018classification}}
+    \\
+    \textbf{URL:}
+    \url{https://espace2.etsmtl.ca/id/eprint/17579/}
+    \\
+    \textbf{Resumen:\\}
+    En este estudio piloto, se plantea la necesidad de avanzar en el estado del arte sobre las capacidades de procesamiento en micro-controladores de sonidos no verbales como la tos y carraspeo. La correcta clasificación de este tipo de sonidos no verbales captados a través de un pequeño dispositivo intra-aural podría mejorar la atención médica. Las técnicas propuestas que se evaluan en este estudio piloto son Gaussian Mixture Model (GMM), Support Vector Machine y Multi-Layer Perceptron.
+    \\
+    \textbf{Por qué es útil:\\}
+    El estudio trata técnicas que se adecuan enormemente al tipo de problema que se quiere resolver. Entender su funcionamiento y complejidad permite aumentar el abánico de posibilidades en la tarea de desarrollar un modelo clasificador de sonidos no verbales.
 \subsubsection*{Artículo 6}
-% \begin{flushleft}
-%     \textbf{Título:}
-%     \\
-%     \textbf{ID: \cite{}}
-%     \\
-%     \textbf{URL:}
-%     \url{}
-%     \\
-%     \textbf{Resumen:\\}
-%     \\
-%     \textbf{Por qué es útil:\\}
-% \end{flushleft}
+    \textbf{Título:}
+    “A Bag-of-Audio-Words Approach for Snore Sounds' Excitation Localisation”
+    \\
+    \textbf{ID: \cite{schmitt2016bag}}
+    \\
+    \textbf{URL:}
+    \url{https://ieeexplore.ieee.org/abstract/document/7776181/}
+    \\
+    \textbf{Resumen:\\}
+    En esta publicación se estudia como mejorar la calidad del sueño y tratar patologías graves en personas que padecen de ronquidos y de apnea del sueño, a partir del análisis de sonidos. Se trata de un campo de estudio eminentemente práctico que destaca por la importancia y los riesgos en la salud que generarn este tipo de enfermedades. Se utilizan técnicas como Bag-of-audio-words para mejorar la eficiencia en clasificadores de sonidos.
+    \\
+    \textbf{Por qué es útil:\\}
+    El enfoque que se da al análisis de sonidos es muy práctico y aunque tal vez muy específico, permite hacerse a la idea de como puede ser una aplicación práctica de un clasificador de sonidos, además de mejorar la precisión con la técnica Bag-of-audio-words.
 \subsubsection*{Artículo 7}
-% \begin{flushleft}
-%     \textbf{Título:}
-%     \\
-%     \textbf{ID: \cite{}}
-%     \\
-%     \textbf{URL:}
-%     \url{}
-%     \\
-%     \textbf{Resumen:\\}
-%     \\
-%     \textbf{Por qué es útil:\\}
-% \end{flushleft}
+     \textbf{Título:}
+     "Eliminacion de ruido en sonidos cardíacos mediante tecnicas de aprendizaje profundo"
+     \\
+     \textbf{ID: \cite{rodriguezeliminacion}}
+     \\
+     \textbf{URL:}
+     \url{https://rcs.cic.ipn.mx/2023_152_9/Eliminacion%20de%20ruido%20en%20sonidos%20cardiacos%20mediante%20tecnicas%20de%20aprendizaje%20profundo.pdf}
+     \\
+     \textbf{Resumen:\\}
+     El artículo aborda la problemática del ruido en grabaciones de sonidos cardiacos y propone una solución mediante el uso de técnicas avanzadas de aprendizaje profundo. Se enfoca en mejorar la calidad de estas grabaciones para facilitar diagnósticos más precisos y eficaces en el ámbito médico. La investigación destaca por su enfoque innovador en el procesamiento de señales y su potencial para contribuir significativamente a la cardiología y la medicina diagnóstica.
+     \\
+     \textbf{Por qué es útil:\\}
 \subsubsection*{Artículo 8}
-% \begin{flushleft}
-%     \textbf{Título:}
-%     \\
-%     \textbf{ID: \cite{}}
-%     \\
-%     \textbf{URL:}
-%     \url{}
-%     \\
-%     \textbf{Resumen:\\}
-%     \\
-%     \textbf{Por qué es útil:\\}
-% \end{flushleft}
+    \textbf{Título:}
+    "Clasificación de voces a través de séries de Fourier y redes neuronales"
+    \\
+    \textbf{ID: \cite{gomez2023clasificacion}}
+    \\
+    \textbf{URL:}
+    \url{file:///C:/Users/j0n4s/Downloads/2023-24-ETSII-A-2178-2178050-m.gomezma.2017-MEMORIA.pdf}
+    \\
+    \textbf{Resumen:\\}
+    El objetivo principal es desarrollar un método matemático que permita clasificar las voces según si padecen algún tipo de afección o no, utilizando para ello series de Fourier y redes neuronales convolucionales (CNN).
+    El trabajo se divide en dos grandes bloques: la clasificación mediante series de Fourier y la clasificación utilizando redes neuronales. En el primer bloque, se escogen voces sanas y voces con nódulos para comparar su frecuencia fundamental media y la amplitud de sus oscilogramas. Se plantean hipótesis sobre las diferencias entre voces sanas y con patología, proponiendo ajustar distribuciones gaussianas a las características de las señales de voz para confirmar o deshechar estas hipótesis.
+    \\En el segundo bloque, se propone el uso de redes neuronales, específicamente la red neuronal convolucional (CNN), para la clasificación de las voces. Se identifica un problema de desbalance en el conjunto de datos, ya que hay muchas más muestras de voces sanas que de voces con patología. A pesar de que la exactitud del modelo es alta, la precisión y el recall son muy bajos para las muestras patológicas, lo que indica que el modelo tiende a clasificar todas las señales de voz como sanas. Para intentar solucionar este problema, se propone un entrenamiento de bajo y sobremuestreo de las entradas de la red.
+    \\
+    \textbf{Por qué es útil:\\}
+    El manejo de redes neuronales en sintonía con la transformada de Fourier es el foco principal del proyecto. Estas herramientas permitirán una correcta limpieza y extracción de características del dataset de sonidos no verbales.
+\newpage
 \subsection{Tabla resumen}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}m{#1}}
-\begin{table}[h]
-    \centering
-    \begin{tabular}{|c|P{2.9cm}|P{3cm}|P{3cm}|P{2.8cm}|}
+% \begin{table}[h]
+%     \centering
+    \begin{longtable}{|c|m{2.9cm}|m{3cm}|m{3cm}|m{2.8cm}|}
         \hline
         \textbf{Artículo}
         & \textbf{Título}
         & \textbf{Análisis}
         & \textbf{Objetivo del estudio}
         & \textbf{Relación y aportación}
+        \\
+        \hline
+        1
+        & Desarrollo y análisis de clasificadores de señales de audio
+        & Crear un sistema de clasificación de sonidos ambientales.Una vez implantado el modelo estudiar los parámetros de decisión.
+        & Explorar métodos de extracción de características de audio.Conseguir una precisión aceptable. Elegir el mejor modelo de inteligencia artificial.
+        & Clasificador de sonidos y Transformada de Fourier
+        \\
+        \hline
+        2
+        & Environmental sound recognition: a survey
+        & Desarrollar métodos para el reconocimiento de instrumentos musicales utilizando algoritmos de aprendizaje automático
+        & Identificar qué algoritmo es más óptimo para la clasificación. Se exploran aspectos como la reducción de dimensiones y las dificultades asociadas a cada instrumento
+        & Contraste de algoritmos de clasificación y analogía de los instrumentos musicales con sonidos producidos por las personas.
         \\
         \hline
         3
@@ -143,5 +171,33 @@
         & Contraste de algoritmos de clasificación y analogía de los instrumentos musicales con sonidos producidos por las personas.
         \\
         \hline
-    \end{tabular}
-\end{table}
+        5
+        & Classification of Nonverbal Human Produced Audio Events: A Pilot Study
+        & Evaluación de la técnicas GMM, SVM y Perceptrón Multicapa en el análisis de sonidos no verbales. 
+        & En 10 categorías de sonidos no verbales, medir la eficiencia de 3 técnicas comunmente utilizadas en el procesamiento de sonidos.
+        & Guía útil en la elección del algoritmo utilizado en el desarrollo de un clasificador de sonidos no verbales.
+        \\
+        \hline
+        6
+        & A Bag-of-Audio-Words Approach for Snore Sounds' Excitation Localisation
+        & Análisis de sonidos relacionados con el sueño (ronquidos, apnea del sueño, \dots).
+        & Realizar un enfoque en la clasificación basado en la técnica Bag-of-Audio-Words.
+        & Entender un caso práctico de uso y el enfoque mediante la técnica Bag-of-Audio-Words.
+        \\
+        \hline
+        7
+        & Eliminacion de ruido en sonidos cardíacos mediante tecnicas de aprendizaje profundo
+        & Estudia la efectividad de las técnicas de aprendizaje profundo para eliminar el ruido de las grabaciones de sonidos cardíacos.
+        & El estudio busca mejorar la calidad de los registros de sonidos cardíacos, lo que permitiría un diagnóstico más preciso y confiable de las condiciones cardíacas.
+        & Clasificador de sonidos, técnicas avanzadas de aprendizaje profundo y Transformada de Fourier
+        \\
+        \hline
+        8
+        & Clasificación de voces a través de séries de Fourier y redes neuronales
+        & Se centra en el desarrollo y evaluación de un método matemático para clasificar voces según la presencia de alguna afección.
+        & El estudio busca identificar diferencias significativas en las características de las señales de voz entre voces sanas y voces con patología, con el fin de proporcionar una herramienta precisa y eficaz para el diagnóstico temprano de trastornos vocales.
+        & Series de Fourier y Redes Neuronales Convolucionales (CNN).
+        \\
+        \hline
+    \end{longtable}
+% \end{table}
