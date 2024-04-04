@@ -11,7 +11,10 @@
 				"ms-toolsai.jupyter",
 				"formulahendry.code-runner",
 				"vscode-icons-team.vscode-icons"
-			]
+			],
+			"settings": {
+				"python.setInterpreter": ".venv/bin/python"
+			}
 		}
 	},	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
