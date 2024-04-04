@@ -8,7 +8,9 @@
 		"vscode": {
 			"extensions": [
 				"donjayamanne.python-extension-pack",
-				"formulahendry.code-runner"
+				"ms-toolsai.jupyter",
+				"formulahendry.code-runner",
+				"vscode-icons-team.vscode-icons"
 			]
 		}
 	},	// Features to add to the dev container. More info: https://containers.dev/features.
