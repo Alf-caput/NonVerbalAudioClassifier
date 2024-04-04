@@ -9,16 +9,10 @@
 			"extensions": [
 				"donjayamanne.python-extension-pack",
 				"formulahendry.code-runner"
-				// "James-Yu.latex-workshop"
 			]
 		}
 	},	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
-	"features": {
-		"ghcr.io/prulloac/devcontainer-features/latex:1": {
-			"scheme": "minimal"
-		}
-	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
