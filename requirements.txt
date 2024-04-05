@@ -1,6 +1,5 @@
 ipykernel
 pandas
-playsound
 numpy
 matplotlib
 scipy
