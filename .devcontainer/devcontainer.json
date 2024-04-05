@@ -11,5 +11,5 @@
 		}
 	},
 
-	"postCreateCommand": "python -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt && wget https://www.dropbox.com/s/fuld3z222j9t1oy/vs_release_16k.zip?dl=0 -O src/vs_release_16k.zip"
+	"postCreateCommand": "pip install -r requirements.txt && wget https://www.dropbox.com/s/fuld3z222j9t1oy/vs_release_16k.zip?dl=0 -O src/vs_release_16k.zip"
 }
