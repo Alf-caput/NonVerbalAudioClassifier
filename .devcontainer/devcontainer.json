@@ -1,0 +1,15 @@
+{
+	"name": "Python 3",
+	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"donjayamanne.python-extension-pack",
+				"ms-toolsai.jupyter",
+				"formulahendry.code-runner"
+			]
+		}
+	},
+
+	"postCreateCommand": "pip install -r requirements.txt && wget https://www.dropbox.com/s/fuld3z222j9t1oy/vs_release_16k.zip?dl=0 -O src/vs_release_16k.zip"
+}

@@ -4,7 +4,6 @@ doc/build/
 # Dataset
 vs_release_16k.zip
 data/
-data1/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
