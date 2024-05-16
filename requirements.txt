@@ -3,3 +3,5 @@ pandas
 numpy
 matplotlib
 scipy
+librosa
+tensorflow

@@ -1,9 +1,14 @@
 # LaTeX
 doc/build/
 
+# NN
+Conv1D_82.zip
+app/Conv1D_82/
+
 # Dataset
 vs_release_16k.zip
 data/
+audio_16k/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
