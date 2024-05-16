@@ -5,9 +5,9 @@
 
 Para el desarrollo del proyecto, se ha optado por utilizar la metodología KDD (Knowledge Discovery in Databases) debido a su eficacia en proyectos de análisis y clasificación de datos. KDD proporciona una serie de pasos estructurados que abarcan desde la identificación de los datos hasta la implementación de modelos predictivos, esto es clave para manejar de forma eficaz la complejidad de nuestros datos de audio y garantizar una gestión coherente y organizada de todo el proyecto. Además, KDD ofrece un enfoque iterativo que nos permite ajustar y mejorar continuamente nuestros modelos a medida que avanzamos en el análisis de los datos.  
 
-En cada una de las cinco etapas de la metodología KDD, se llevan a cabo procesos específicos para avanzar en el análisis y la clasificación de los datos de audio. La primera etapa, denominada "database", se centra en la identificación y selección de los datos relevantes para nuestro análisis. Luego, en la etapa de "preprocesamiento", se realizan diversas operaciones, para preparar los datos de manera óptima para su análisis posterior. 
+En cada una de las cinco etapas de la metodología KDD, se llevan a cabo procesos específicos para avanzar en el análisis y la clasificación de los datos de audio. La primera etapa, denominada ``database'', se centra en la identificación y selección de los datos relevantes para nuestro análisis. Luego, en la etapa de ``preprocesamiento'', se realizan diversas operaciones, para preparar los datos de manera óptima para su análisis posterior. 
 
-La siguiente etapa es el "entrenamiento", donde se desarrollan y ajustan los modelos de clasificación de sonidos utilizando técnicas de aprendizaje automático. Posteriormente, en la etapa de "comparativa de modelos", se evalúan y comparan los diferentes modelos desarrollados para identificar el más adecuado para nuestro propósito. Finalmente, en la etapa de "implementación", se llevan los modelos seleccionados a entornos prácticos, lo que nos permite utilizar los resultados obtenidos en situaciones del mundo real.
+La siguiente etapa es el ``entrenamiento'', donde se desarrollan y ajustan los modelos de clasificación de sonidos utilizando técnicas de aprendizaje automático. Posteriormente, en la etapa de ``comparativa de modelos'', se evalúan y comparan los diferentes modelos desarrollados para identificar el más adecuado para nuestro propósito. Finalmente, en la etapa de ``implementación'', se llevan los modelos seleccionados a entornos prácticos, lo que nos permite utilizar los resultados obtenidos en situaciones del mundo real.
 
 \subsubsection{Database}
 
@@ -15,7 +15,7 @@ Comenzando por la parte de database, se realizó un análisis inicial de los dat
 
 \subsubsection{Preprocesamiento}
 
-En cuanto al preprocesamiento de los datos, se llevaron a cabo varias etapas importantes. En primer lugar, se realizó la normalización de los archivos de audio en formato ".wav", transformándolos en tensores de valores decimales. Además, se asignaron etiquetas en formato one-hot a los nombres de los archivos para facilitar su procesamiento y clasificación.
+En cuanto al preprocesamiento de los datos, se llevaron a cabo varias etapas importantes. En primer lugar, se realizó la normalización de los archivos de audio en formato ``.wav'', transformándolos en tensores de valores decimales. Además, se asignaron etiquetas en formato one-hot a los nombres de los archivos para facilitar su procesamiento y clasificación.
 
 Posteriormente, se llevo a cabo la estandarización de las señales de audio para igualar las longitudes de los tensores de señal. Esto se logró mediante dos técnicas principales: el padding, que consiste en agregar valores nulos a los extremos de los tensores para igualar su longitud, y el random cropping, que recorta aleatoriamente fragmentos de los tensores para ajustar su longitud.
 
@@ -41,7 +41,6 @@ No obstante, se continuó en la búsqueda por la mejor estrategia de procesamien
 En última instancia, dada la magnitud del conjunto de datos y la necesidad de administrar eficientemente la memoria y la capacidad de cómputo, se optó por implementar un input pipeline utilizando herramientas y pipelines de TensorFlow. Esta implementación permitió convertir los archivos de audio en tensores de valores decimales y organizarlos en lotes para su procesamiento por lotes. Esta modificación permitió continuar con el estudio del clasificador, ya que se estaban encontrando múltiples problemas debido a que la memoria de Google.Collab no era suficiente y se estaba imposibilitando el trabajo.
 
 Esta conversión a tensores es fundamental ya que facilita el manejo de los datos en memoria y permite realizar operaciones matemáticas eficientes en ellos. Además, al utilizar tensores en lugar de datos de audio brutos, se redujo significativamente el consumo de memoria, lo que evitó errores de memoria y optimizó el rendimiento del sistema durante el procesamiento de los datos.  El input pipeline también permitió organizar los datos en lotes, lo que facilitó su procesamiento por lotes durante el entrenamiento de modelos de aprendizaje automático. Esto aceleró el proceso de entrenamiento y mejoró la eficiencia del sistema en general. 
-
 
 \subsubsection{Entrenamiento}
 En esta fase del KDD, se eligieron y entrenaron diferentes modelos matemáticos para el análisis del set de datos. El objetivo del proyecto es conseguir predecir las etiquetas de las señales de sonidos no verbales, para ello se entrenaron los siguientes modelos:
