@@ -9,7 +9,11 @@ En cada una de las cinco etapas de la metodología KDD, se llevan a cabo proceso
 
 La siguiente etapa es el "entrenamiento", donde se desarrollan y ajustan los modelos de clasificación de sonidos utilizando técnicas de aprendizaje automático. Posteriormente, en la etapa de "comparativa de modelos", se evalúan y comparan los diferentes modelos desarrollados para identificar el más adecuado para nuestro propósito. Finalmente, en la etapa de "implementación", se llevan los modelos seleccionados a entornos prácticos, lo que nos permite utilizar los resultados obtenidos en situaciones del mundo real.
 
+\subsubsection{Database}
+
 Comenzando por la parte de database, se realizó un análisis inicial de los datos disponibles. Se procesaron un total de 2,66 GB de datos, que consistían en 21,024 fragmentos de audio con diferentes tipos de sonidos no verbales de longitud variable. Sin embargo, durante este proceso se realizó una limpieza de los datos para eliminar fragmentos de audio con longitudes similares a 0, lo que resultó en un conjunto final de 20,502 audios para su análisis 
+
+\subsubsection{Preprocesamiento}
 
 En cuanto al preprocesamiento de los datos, se llevaron a cabo varias etapas importantes. En primer lugar, se realizó la normalización de los archivos de audio en formato ".wav", transformándolos en tensores de valores decimales. Además, se asignaron etiquetas en formato one-hot a los nombres de los archivos para facilitar su procesamiento y clasificación.
 
