@@ -64,6 +64,7 @@ def update_plot(frame):
             if np.abs(max(plotdata)) < 0.01:
                 label = "None"
             else:
+            
                 pred = model.predict(np.expand_dims(plotdata, axis=0))
                 idx = np.argmax(pred)
                 label = vocal_sounds[idx]
