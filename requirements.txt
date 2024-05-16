@@ -1,6 +1,7 @@
 ipykernel
 pandas
-playsound
 numpy
 matplotlib
 scipy
+librosa
+tensorflow
