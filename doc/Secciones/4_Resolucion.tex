@@ -35,3 +35,12 @@ Una vez se definió la arquitectura se estimaron los hiperparámetros para cada 
     \item Epochs: dependiente del modelo
 \end{itemize}
 Para el mejor modelo el número de épocas fue 12.
+\subsubsection{Comparativa de modelos}
+Por simplicidad para la comparativa de modelos se tuvo en cuenta principalmente su precisión para resolver el problema en cuestión, se deja como trabajo a futuro el estudio en escalabilidad y ocupación en memoria de los parámetros entrenados.
+
+Para la elección del modelo que se usará para la implementación real, se compararon los siguientes resultados:
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{ImagenesLatex/ComparacionModelos.PNG}
+\end{center}
+
+El mejor modelo obtenido en abril de 2024 fue el realizado con capas convolucionales 1D, que por tener más de 2 capas entra en la categoría de deep learning.
