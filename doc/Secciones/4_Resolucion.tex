@@ -19,9 +19,22 @@ En cuanto al preprocesamiento de los datos, se llevaron a cabo varias etapas imp
 
 Posteriormente, se llevo a cabo la estandarización de las señales de audio para igualar las longitudes de los tensores de señal. Esto se logró mediante dos técnicas principales: el padding, que consiste en agregar valores nulos a los extremos de los tensores para igualar su longitud, y el random cropping, que recorta aleatoriamente fragmentos de los tensores para ajustar su longitud.
 
-Además, se exploraron diversas técnicas para el procesamiento y análisis de datos de audio. Inicialmente, se optó por aplicar la transformada de Fourier a los fragmentos de audio. Esta técnica permitió descomponer las señales de audio en sus componentes de frecuencia, lo que resultó útil para identificar las características espectrales distintivas de diferentes tipos de sonidos. Sin embargo, conforme se avanzaba en el proyecto, se observaron limitaciones en términos de optimización y eficacia en la clasificación de sonidos al aplicar exclusivamente la transformada de Fourier. Por lo tanto, se decidió explorar otras técnicas y se investigó Mel-frequency cepstral coefficients (MFCCs).
+Además, se exploraron diversas técnicas para el procesamiento y análisis de datos de audio. Inicialmente, se optó por aplicar la transformada de Fourier a los fragmentos de audio. Esta técnica permitió descomponer las señales de audio en sus componentes de frecuencia, lo que resultó útil para identificar las características espectrales distintivas de diferentes tipos de sonidos. Sin embargo, conforme se avanzaba en el proyecto, se observaron limitaciones en términos de optimización y eficacia en la clasificación de sonidos al aplicar exclusivamente la transformada de Fourier. 
 
+
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{ImagenesLatex/fourier.jpg}
+\end{center}
+
+
+Por lo tanto, se decidió explorar otras técnicas y se investigó Mel-frequency cepstral coefficients (MFCCs).
 Los Mel-frequency cepstral coefficients (MFCC) son una técnica comúnmente usada en el procesamiento de señales de audio para extraer características importantes que describen la estructura espectral de una señal sonora. Esta técnica se basa en la idea de que el sistema auditivo humano no percibe todas las frecuencias de manera uniforme, sino que es más sensible a ciertos rangos de frecuencia, lo que se conoce como la escala de Mel.
+
+
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{ImagenesLatex/espectrograma.jpg}
+\end{center}
+
 
 No obstante, se continuó en la búsqueda por la mejor estrategia de procesamiento de datos. Después de implementar los MFCCs, se buscó la opinión de un consultor ingeniero externo. Este paso resultó crucial, ya que se proporcionó una perspectiva experta sobre cómo optimizar el enfoque. Tras consultar al ingeniero externo, se llegó a la conclusión de que la estrategia más eficiente sería implementar los algoritmos directamente sobre los datos originales de audio, aprovechando su estructura matricial, por lo que se descartó el uso de la transformada de Fourier y de los MFCCs. Esta recomendación permitió optimizar el proceso de procesamiento de datos y la aplicación de los algoritmos de manera más directa y efectiva.
 
