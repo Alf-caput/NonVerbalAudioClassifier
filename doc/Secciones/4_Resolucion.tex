@@ -20,9 +20,18 @@ Las redes neuronales en el contexto del aprendizaje automático (machine learnin
 
 Se comenzó realizando arquitecturas secuenciales con capas densas. Las capas densas son un tipo de conexiones entre neuronas que conectan todas las neuronas de entrada con todas las de salida, y de manera automática utilizando regresores lineales ajustan mediante pesos como de importante es cada conexión. Este tipo de capas tienen la desventaja de que estudian de manera parcial el orden en el que aparecen los datos, y los sonidos que se pretenden estudiar tienen carácteristicas que son temporalmente dependientes, como puede ser tras una tos un sonido de inspiración o la variación en amplitud al final de la misma. Se probaron modelos más simples con pocas capas y más complejos con muchas capas. Los resultados fueron peores que los obtenidos con KNN y además el modelo se encontraba limitado por su arquitectura, no superando el umbral de 25\% a pesar de aumentar el número de capas.
 
-Viendo los resultados anteriores, se probó con modelos basados en capas convolucionales unidimensionales, esta arquitectura permite a la red extraer información posicional de los eventos que ocurren en los audios, este tipo de capas utilizan múltiples filtros sobre ventanas de los vectores de amplitudes, obteniendo diferentes mapas de características
+Viendo los resultados anteriores, se probó con modelos basados en capas convolucionales unidimensionales, esta arquitectura permite a la red extraer información posicional de los eventos que ocurren en los audios, este tipo de capas utilizan múltiples filtros sobre ventanas de los vectores de amplitudes, obteniendo diferentes mapas de características. La finalidad de estas capas es reducir la dimensionalidad de los audios, llevando el espacio de dimensiones a otras más facilmente interpretables por regresores lineales.
+La mejora al usar este tipo de modelos fue notable, tanto modelos sencillos como más complejos, el mejor modelo alcanzado en mayo de 2024 tuvo un precisión del 85\%, a continuación se muestra la tabla parámetros entrenables de la mejor arquitectura:
 \begin{center}
     \includegraphics[width=0.8\textwidth]{ImagenesLatex/Conv1D_capas.PNG}
 \end{center}
+Los hiperparámetros principales para este modelo:
 
-
+Una vez se definió la arquitectura se estimaron los hiperparámetros para cada modelo, se utilizaron para todos los modelos de RNA los siguientes:
+\begin{itemize}
+    \item Train(\%), Test(\%): 80\%, 20\%
+    \item Batch size: 128 (máximo permitido por colab)
+    \item Learning rate: Variable entre 0.01 y 0.001
+    \item Epochs: dependiente del modelo
+\end{itemize}
+Para el mejor modelo el número de épocas fue 12.
